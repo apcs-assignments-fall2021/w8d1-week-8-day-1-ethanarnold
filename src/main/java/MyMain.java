@@ -1,11 +1,11 @@
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class MyMain {
 
     // Generates a random number between 10 and 20, inclusive
     public static int randomTeen() {
-        // YOUR CODE HERE FOR WARMUP
-        return -1;
+        return (int) ((Math.random() * (21 - 10)) + 10);
     }
 
     // Use your previous method to generate three random numbers between 10 and 20, inclusive.
@@ -16,16 +16,17 @@ public class MyMain {
     // The largest number is 20
     // The smallest number is 10
     public static void main(String[] args) {
-        // YOUR CODE HERE FOR WARMUP
+        int a = randomTeen();
+        int b = randomTeen();
+        int c = randomTeen();
+        System.out.println("The three random numbers are " + a + ", " + b + ", and " + c);
+        System.out.println("The largest number is " + Math.max(a, Math.max(b, c)));
+        System.out.println("The smallest number is " + Math.min(a, Math.min(b, c)));
 
-
-
-
-
-//         // Uncomment this code later!
-//         System.out.println("Mathey.max tests");
-//         System.out.println(Mathey.max(1, 2)); // 2
-//         System.out.println(Mathey.max(2, 1)); // 2
+         // Uncomment this code later!
+         System.out.println("Mathey.max tests");
+         System.out.println(Mathey.max(1, 2)); // 2
+         System.out.println(Mathey.max(2, 1)); // 2
     }
 
 }
