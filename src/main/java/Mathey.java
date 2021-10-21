@@ -57,7 +57,7 @@ public class Mathey {
      *     randomInteger(1, 4) => 4
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-       public static int randomRange(int min, int max) {
+       public static int randomInteger(int min, int max) {
            return (int) ((Math.random() * (max - min)) + min);
        }
 
@@ -72,7 +72,7 @@ public class Mathey {
      *     randomInteger(5) => 0
      */
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
-    public static int randomToMax(int max) {
+    public static int randomInteger(int max) {
         return (int) ((Math.random() * max));
     }
 
@@ -88,7 +88,7 @@ public class Mathey {
     // YOUR CODE HERE, METHOD HEADER ALSO REQUIRED
     public static int pow(int base, int degree) {
         int result = base;
-        for (int i = 0; i < degree; i++) {
+        for (int i = 0; i < degree-1; i++) {
             result *= base;
         }
         return result;
@@ -149,8 +149,8 @@ public class Mathey {
      *     ceil(3.01) => 4
      */
     public static int ceiling(double x) {
-        return x >= 0 ? (int) x + 1: (int) x + 2;
-
+        return x >= 0 ? (int) x + 1 : (int) x + 2;
+    }
 
 
 
@@ -168,4 +168,14 @@ public class Mathey {
 
         return x1;
     }
+//    public static double pythagorean(int a, int b, int c, char output) {
+//        if(output == 'a') {
+//            return sqrt(pow(c, 2) - pow(b, 2));
+//        }
+//        if(output == 'b')
+//        return -1;
+//    }
+
+
+
 }
